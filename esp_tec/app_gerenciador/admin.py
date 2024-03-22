@@ -4,4 +4,6 @@ from django.contrib import admin
 
 from .models import Projeto
 
-admin.site.register(Projeto)
+@admin.register(Projeto)
+class ProjetAdmin(admin.ModelAdmin):
+    list_display = ("nome", "dt_criacao")
