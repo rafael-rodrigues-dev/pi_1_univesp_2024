@@ -50,7 +50,7 @@ class ViewPDF(View):
         id_projeto = kwargs['pk']
         projeto = Projeto.objects.get(id=id_projeto)
         context = {
-            'projeto': projeto,
+            'object': projeto,
             'hoje': date.today()
         }
         pdf = render_to_pdf('report.html',context)
