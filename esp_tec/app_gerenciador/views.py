@@ -49,5 +49,9 @@ class ViewPDF(View):
     def get(self, request, *args, **kwargs):
         id_projeto = kwargs['pk']
         projeto = Projeto.objects.get(id=id_projeto)
-        pdf = render_to_pdf('report.html',{'object': projeto.__dict__})
+        context = {
+            'projeto': projeto,
+            'hoje': date.today()
+        }
+        pdf = render_to_pdf('report.html',context)
         return HttpResponse(pdf, content_type='application/pdf')
