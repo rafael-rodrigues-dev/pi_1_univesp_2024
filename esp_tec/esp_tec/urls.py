@@ -17,12 +17,16 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-from app_gerenciador.views import ProjectReport
+from app_gerenciador.views import ProjectReport, ViewPDF
 
 urlpatterns = [
-    path("admin/", admin.site.urls),
+    path("admin/", admin.site.urls, name="admin"),
     path('report/<int:pk>/',
         ProjectReport.as_view(),
         name = 'report'
+    ),
+    path('report_pdf/<int:pk>/',
+        ViewPDF.as_view(),
+        name = 'report_pdf'
     ),
 ]
