@@ -1,0 +1,12 @@
+{% extends "home.html" %}
+
+{% block content %} 
+
+    Confirma a exclusão do projeto '{{object.nome}}'?  
+    <form method="post" action=".">
+        {% csrf_token %}
+        <button type="submit" class="btn btn-danger">Sim</button>
+        <button type="button" class="btn btn-secondary"  onclick="location.href = '{% url 'projeto_editar' pk=object.id %} '">Não</button>
+    </form>
+    
+{% endblock content%}
