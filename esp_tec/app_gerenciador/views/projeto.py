@@ -43,7 +43,7 @@ class ProjetoListView(ListView):
             result = result.filter(Q(nome__icontains=search))
 
         return result
-    
+
     def get_context_data(self, **kwargs: Any) -> dict[str, Any]:
         context =  super().get_context_data(**kwargs)
         context['search'] = self.request.GET.get('search', None)

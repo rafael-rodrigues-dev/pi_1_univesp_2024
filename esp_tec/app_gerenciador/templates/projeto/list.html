@@ -2,7 +2,7 @@
 
 {% block content %} 
 
-<h1> Lista de Projetos </h1>
+<h2> Lista de Projetos </h2>
 
 <div style="float: right;">
   <button type="submit" class="btn btn-primary" onclick="location.href = '{% url 'projeto_adicionar' %}'"> Adicionar </button>
@@ -11,8 +11,8 @@
 <form>
 
   <div class="input-group mb-3">
-    <input type="text" class="form-control" placeholder="Procurar" name="search" value="{{ search }}">
-    <button class="btn btn-success" type="submit">Go</button>
+    <input type="text" class="form-control" placeholder="Digite aqui ..." name="search" value="{{ search | default_if_none:'' }}">
+    <button class="btn btn-success" type="submit"> Procurar </button>
   </div>
 
 </form>
