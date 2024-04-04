@@ -1,0 +1,42 @@
+[
+{
+    "model": "app_gerenciador.material",
+    "pk": 1,
+    "fields": {
+        "nome": "Cimento",
+        "unidade_medida": "Kg"
+    }
+},
+{
+    "model": "app_gerenciador.material",
+    "pk": 2,
+    "fields": {
+        "nome": "Areia",
+        "unidade_medida": "m2"
+    }
+},
+{
+    "model": "app_gerenciador.material",
+    "pk": 3,
+    "fields": {
+        "nome": "Bloco",
+        "unidade_medida": "cento"
+    }
+},
+{
+    "model": "app_gerenciador.material",
+    "pk": 4,
+    "fields": {
+        "nome": "Cano PVC 3/4",
+        "unidade_medida": "m"
+    }
+},
+{
+    "model": "app_gerenciador.material",
+    "pk": 5,
+    "fields": {
+        "nome": "Brita",
+        "unidade_medida": "Kg"
+    }
+}
+]

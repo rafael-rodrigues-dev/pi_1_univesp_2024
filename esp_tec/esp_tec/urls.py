@@ -17,7 +17,14 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-from app_gerenciador.views import ProjectReport, ViewPDF
+from app_gerenciador.views import ProjectReport, ViewPDF, home
+
+from app_gerenciador.views.projeto import (
+    ProjetoListView, 
+    ProjetoCreateView, 
+    ProjetoUpdateView,
+    ProjetoDeleteView
+)
 
 urlpatterns = [
     path("admin/", admin.site.urls, name="admin"),
@@ -29,4 +36,22 @@ urlpatterns = [
         ViewPDF.as_view(),
         name = 'report_pdf'
     ),
+    path('projeto/',
+        ProjetoListView.as_view(),
+        name = 'projeto_list'
+    ),
+    path('projeto/adicionar',
+        ProjetoCreateView.as_view(),
+        name = 'projeto_adicionar'
+    ),
+    path('projeto/editar/<int:pk>/',
+        ProjetoUpdateView.as_view(),
+        name = 'projeto_editar'
+    ),
+     path(
+        'projeto/delete/<int:pk>/',
+        ProjetoDeleteView.as_view(),
+        name = 'projeto_delete'
+    ),
+    path('', home, name='home')
 ]

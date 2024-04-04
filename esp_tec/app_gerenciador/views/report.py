@@ -47,7 +47,7 @@ def render_to_pdf(template_src, context_dict):
 
 
 class ViewPDF(View):
-
+    """ Rota para o PDF """
     def get(self, request, *args, **kwargs):
         id_projeto = kwargs['pk']
         projeto = Projeto.objects.get(id=id_projeto)
@@ -60,4 +60,5 @@ class ViewPDF(View):
 
 
 def home(request):
+    """ Rota para a página inicial """
     return render(request, 'home.html')

@@ -1,0 +1,40 @@
+{% extends "home.html" %}
+
+{% block content %} 
+
+<h2> Lista de Projetos </h2>
+
+<div style="float: right;">
+  <button type="submit" class="btn btn-primary" onclick="location.href = '{% url 'projeto_adicionar' %}'"> Adicionar </button>
+</div>
+
+<form>
+
+  <div class="input-group mb-3">
+    <input type="text" class="form-control" placeholder="Digite aqui ..." name="search" value="{{ search | default_if_none:'' }}">
+    <button class="btn btn-success" type="submit"> Procurar </button>
+  </div>
+
+</form>
+
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th>Nome</th>
+      <th>Data de criação</th>
+      <th> </th>
+    </tr>
+  </thead>
+
+  <tbody>
+      {% for projeto in object_list %}
+      <tr>
+          <td> <a href="{% url 'projeto_editar' pk=projeto.id %}"> {{ projeto.nome }} </a> </td>
+          <td> {{ projeto.dt_criacao }} </td>
+          <td> <button type="submit" class="btn btn-outline-info btn-sm" onclick="window.open('{% url 'report_pdf' pk=projeto.id %}','_blank')"> PDF </button> </td>
+        </tr>
+      {% endfor %}
+  </tbody>
+</table>
+
+{% endblock content %}

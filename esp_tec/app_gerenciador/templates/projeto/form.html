@@ -1,0 +1,60 @@
+{% extends "home.html" %}
+
+{% block content %} 
+
+
+
+<form method="post" action="">
+  {% csrf_token %}  
+  <div class="container">
+    <h2> Projeto </h2>
+    
+    <div class="row">
+      <div class="col-sm-8">
+        <div class="mb-3">
+          <label class="form-label" for="{{ form.nome.auto_id }}">{{ form.nome.label }}</label>
+          {{ form.nome }}
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="mb-3">
+          <label class="form-label" for="{{ form.dt_criacao.auto_id }}">{{ form.dt_criacao.label }}</label>
+          {{ form.dt_criacao }}
+        </div>
+      </div>
+      
+    </div>
+
+    <div class="row">
+
+      <div class="col-sm-8">
+        <div class="mb-3">
+          <label class="form-label" for="{{ form.descricao.auto_id }}">{{ form.descricao.label }}</label>
+          {{ form.descricao }}
+        </div>
+      </div>
+
+      <div class="col-sm-4">
+        <div class="mb-3">
+          <label class="form-label" for="{{ form.lista_de_materiais.auto_id }}">{{ form.lista_de_materiais.label }}</label>
+          {{ form.lista_de_materiais }}
+        </div>
+      </div>
+      
+    </div>
+
+    <div style="float: right;">
+    <button type="submit" class="btn btn-primary">Salvar</button>
+
+    <button type="button" class="btn btn-secondary" onclick="location.href = '{% url 'projeto_list' %}'">Voltar</button>
+    
+    {% if object.id %}
+      <button type="button" class="btn btn-danger" onclick="location.href = '{% url 'projeto_delete' pk=object.id %}'">Excluir</button>
+    {% endif %}
+
+  </div>
+    
+  </div>
+</form>
+
+{% endblock content %}

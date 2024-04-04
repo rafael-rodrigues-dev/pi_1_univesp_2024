@@ -1,0 +1,16 @@
+[
+{
+    "model": "app_gerenciador.projeto",
+    "pk": 1,
+    "fields": {
+        "nome": "Constru├º├úo da Nova Sede do CCA-SJ",
+        "descricao": "Projeto do pr├®dio que ser├í utilizado como nova sede do Centro de Computa├º├úo da Aeron├íutica de S├úo Jos├® dos Campos nas depend├¬ncias do Departamento de Ci├¬ncia e Tecnologia Aeroespacial.",
+        "dt_criacao": "2024-03-22",
+        "lista_de_materiais": [
+            1,
+            3,
+            4
+        ]
+    }
+}
+]
