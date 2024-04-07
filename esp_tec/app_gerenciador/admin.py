@@ -5,7 +5,7 @@ from django.contrib import admin
 from django.utils.html import format_html
 from django.urls import reverse_lazy
 
-from .models import Projeto, Material
+from .models import Projeto, Material, Servico
 
 @admin.register(Projeto)
 class ProjetoAdmin(admin.ModelAdmin):
@@ -31,3 +31,13 @@ class MaterialAdmin(admin.ModelAdmin):
 
     def get_ordering(self, request):
         return ['nome', ]
+
+@admin.register(Servico)
+class ServicoAdmin(admin.ModelAdmin):
+    """ Classe admin para o Serviço """
+    list_display = ("codigo", "nome", "descricao", "unidade_medida", "quantidade")
+
+    def get_ordering(self, request):
+        return ['nome', ]
+
+
