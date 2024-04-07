@@ -59,3 +59,32 @@ class Projeto(models.Model):
     class Meta:
         """Plural do nome da classe"""
         verbose_name_plural = "Projetos"
+        
+class Servico(models.Model):
+    """
+    Modelo da persistência de Serviços
+    """
+    nome = models.CharField(
+        max_length=100,
+        verbose_name='Nome do serviço'
+    )
+
+    descricao = models.TextField(
+        verbose_name='Descrição'
+    )
+
+    dt_inicio = models.DateField(
+        verbose_name='Data de inicio'
+    )
+
+    dt_entrega = models.DateField(
+        verbose_name='Data de entrega'
+    )
+    
+    def __str__(self):
+        """Sobrescreve o __str__() """
+        return str(self.nome)
+
+    class Meta:
+        """Plural do nome da classe"""
+        verbose_name_plural = "Serviços"
