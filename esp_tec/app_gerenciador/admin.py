@@ -35,7 +35,7 @@ class MaterialAdmin(admin.ModelAdmin):
 @admin.register(Servico)
 class ServicoAdmin(admin.ModelAdmin):
     """ Classe admin para o Serviço """
-    list_display = ("nome", "dt_inicio")
+    list_display = ("codigo", "nome", "descricao", "unidade_medida", "quantidade")
 
     def get_ordering(self, request):
         return ['nome', ]
