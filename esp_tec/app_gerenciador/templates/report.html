@@ -1,38 +1,291 @@
 <html>
 
-    <head>
-        <title> Especificação Técnica </title>
+<head>
+    <style type="text/css">
+        <!--
+        .xflip {
+            -moz-transform: scaleX(-1);
+            -webkit-transform: scaleX(-1);
+            -o-transform: scaleX(-1);
+            transform: scaleX(-1);
+            filter: fliph;
+        }
+
+        .yflip {
+            -moz-transform: scaleY(-1);
+            -webkit-transform: scaleY(-1);
+            -o-transform: scaleY(-1);
+            transform: scaleY(-1);
+            filter: flipv;
+        }
+
+        .xyflip {
+            -moz-transform: scaleX(-1) scaleY(-1);
+            -webkit-transform: scaleX(-1) scaleY(-1);
+            -o-transform: scaleX(-1) scaleY(-1);
+            transform: scaleX(-1) scaleY(-1);
+            filter: fliph + flipv;
+        }
+
+        .FT35 {
+            font-weight: bold;
+        }
+
+        .ft35 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 36px;
+        }
+
+        .ft36 {
+            font-size: 36px;
+        }
+
+        .page {
+            page-break-before: always;
+            /* Insere quebra de página antes do elemento */
+        }
+
+        p {
+            margin: 0;
+            padding: 0;
+            font-weight: bold;
+        }
+
+        .ft10 {
+            font-size: 14px;
+            font-family: Times;
+            color: #000000;
+        }
+
+        .ft11 {
+            font-size: 21px;
+            font-family: Times;
+            color: #000000;
+        }
+
+        .ft12 {
+            font-size: 28px;
+            font-family: Times;
+            color: #000000;
+        }
+
+        .ft13 {
+            font-size: 19px;
+            font-family: Times;
+            color: #000000;
+        }
+
+        .ft14 {
+            font-size: 10px;
+            font-family: Times;
+            color: #000000;
+        }
+
+        .ft15 {
+            font-size: 12px;
+            font-family: Times;
+            color: #000000;
+        }
+
+        .ft16 {
+            font-size: 11px;
+            font-family: Times;
+            color: #000000;
+        }
+
+        .ft17 {
+            font-size: 14px;
+            line-height: 18px;
+            font-family: Times;
+            color: #000000;
+        }
+
+        .ft18 {
+            font-size: 12px;
+            line-height: 17px;
+            font-family: Times;
+            color: #000000;
+        }
+
+        .ft35 {
+            font-size: 35px;
+            line-height: 17px;
+            font-family: Times;
+            color: #000000;
+        }
+
+        .p2-background {
+            background-image: url('p2.png');
+            background-size: 892px 1262px;
+            width: 892px;
+            height: 1262px;
+        }
+
+        .page {
+            page-break-before: always;
+            /* Insere quebra de página antes do elemento */
+        }
+
+        .ft351 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 36px;
+        }
+
+        .ft351 {
+            font-size: 35px;
+            line-height: 17px;
+            font-family: Times;
+            color: #000000;
+        }
+        -->
+    </style>
+</head>
+
+<body bgcolor="#A0A0A0" vlink="blue" link="blue">
+    <!-- PAGINA 1 -->
+    <a name="1"></a>
+    <style type="text/css">
+
+    </style>
+    <!-- PRCISEI UTILIZAR POSIÇÃO RELATIVA PARA PODER DEIXAR O TEXTO NA IMAGEM NA POSIÇÃO QUE QUERIA -->
+    <div id="page1-div" style="position:relative;width:892px;height:1262px;">
+        <img width="892" height="1262" src="p1.png" alt="background image" />
+        <p style="position: absolute; top: 834px; left: 117px; white-space: nowrap; color: #FF0000;" class="ft11">
+            ORGANIZAÇÃO QUE REALIZOU A ESPECIFICAÇÃO</p>
+        <p style="position:absolute;top:829px;left:820px;white-space:nowrap" class="ft12">&#160;</p>
+        <p style="position: absolute; top: 862px; left: 117px; white-space: nowrap; color: #FF0000;" class="ft10">
+            Endereço do Realizador</p>
+        <p style="position: absolute; top: 899px; left: 117px; white-space: nowrap; color: #FF0000;" class="ft11">
+            CLIENTE</p>
+        <p style="position: absolute; top: 948px; left: 117px; white-space: nowrap; color: #FF0000;" class="ft13">NOME
+            DO PROJETO</p>
+        <p style="position: absolute; top: 994px; left: 117px; white-space: nowrap; width: 707px; color: #FF0000;"
+            class="ft13">TIPO DO PROJETO (ARQUITETURA? ESTRUTURA?)</p>
+        <p style="position:absolute;top:1039px;left:338px;white-space:nowrap" class="ft11">
+            ESPECIFICAÇÕES&#160;TÉCNICAS&#160;</p>
+        <p style="position:absolute;top:1081px;left:117px;white-space:nowrap" class="ft14">AUTOR:&#160;</p>
+        <p style="position: absolute; top: 1127px; left: 190px; white-space: nowrap; color: #FF0000;" class="ft15">Autor
+            do PROJETO
+            Cap&#160;Eng&#160;</p>
+        <p style="position: absolute; top: 1144px; left: 239px; white-space: nowrap; color: #FF0000;" class="ft16">
+            CREA:&#160;XXXXXX/SP
+        </p>
+        <p style="position:absolute;top:1144px;left:355px;white-space:nowrap" class="ft10">&#160;</p>
+        <p style="position:absolute;top:1081px;left:500px;white-space:nowrap" class="ft14">
+            COORDENADOR&#160;TÉCNICO:&#160;</p>
+        <p style="position: absolute; top: 1127px; left: 565px; white-space: nowrap; color: #FF0000;" class="ft15">
+            Coordenador do PROJETO</p>
+        <p style="position: absolute; top: 1144px; left: 631px; white-space: nowrap; color: #FF0000;" class="ft16">
+            CAU:&#160;XXXXX-6</p>
+        <p style="position:absolute;top:1145px;left:709px;white-space:nowrap" class="ft15">&#160;</p>
+        <p style="position:absolute;top:1166px;left:117px;white-space:nowrap" class="ft14">NÚMERO:&#160;</p>
+        <p style="position: absolute; top: 1180px; left: 218px; white-space: nowrap; color: #FF0000;" class="ft10">
+            SP20-09PE01-HID-ET001&#160;
+        </p>
+        <p style="position:absolute;top:1166px;left:500px;white-space:nowrap" class="ft14">DATA:&#160;</p>
+        <p style="position: absolute; top: 1180px; left: 550px; white-space: nowrap; color: #000000;" class="ft13">{{
+            hoje }}&#160;</p>
+        <p style="position:absolute;top:1166px;left:708px;white-space:nowrap" class="ft14">REVISÃO:&#160;</p>
+        <p style="position: absolute; top: 1180px; left: 764px; white-space: nowrap; color: #000000;" class="ft13">00
+        </p>
+    </div>
     </head>
 
     <body>
-        <h1> Especificação Técnica </h1>
-        <h2> {{ object.nome }} </h2>
-        <h3> Criado em {{ object.dt_criacao }}. </h3>
+        <h1>&nbsp; </h1>
+        <!-- PÁGINA PARA EXIBIR RELATÓRIO DE ITENS-->
+        <div class="page">
+            <table width="892" height="1262" border="0" style=background-position: center center;>
+                <tr bgcolor="#FFFFFF">
+                    <td align="center" valign="top">
+                        <p class="ft36">&nbsp;</p>
+                        <p class="ft36">&nbsp;</p>
+                        <p class="ft36">&nbsp;</p>
+                        <table width="777" border="2" align="center"
+                            style="position: absolute; top: 1488px; left: 115px; white-space: nowrap; width: 743px; height: 1061px;">
+                            <tr>
+                                <td valign="top">
+                                    <p class="ft35">&nbsp;</p>
+                                    <p class="ft35"><strong>Especificação Técnica</strong></p>
+                                    <h2> <span class="ft11"><span class="ft11">{{ object.nome }}</span></span></h2>
+                                    <h3 class="ft11"><span class="ft11">Criado em {{ object.dt_criacao }}.</span></h3>
+                                    <p>&nbsp;</p>
+                                    <h3>Descrição do Item</h3>
+                                    <p class="ft11">{{ object.descricao }}</p>
+                                    <span class="ft11"> {% if object.lista_de_materiais </span>%}
+                                </td>
+                            </tr>
+                        </table>
+                        <p>&nbsp;</p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="page">
+            <!-- PÁGINA PARA EXIBIR TABELA COM ITENS-->
+            <table width="892" height="1262" border="0" bgcolor="#FFFFFF">
+                <tr>
+                    <td align="center" valign="top">
+                        <p class="ft36">&nbsp;</p>
+                        <p class="ft36">&nbsp;</p>
+                        <p class="ft36">&nbsp;</p>
+                        <table width="777" border="2" align="center"
+                            style="position: absolute; top: 2748px; left: 115px; white-space: nowrap; height: 1061px; width: 743px; background-color: #FFFFFF; layer-background-color: #FFFFFF; border: px none #000000; font-family: 'Times New Roman', Times, serif; font-size: 9px;"
+                            bordercolor="#000000">
+                            <tr>
+                                <td valign="top">
+                                    <p>&nbsp;</p>
+                                    <p><span class="ft35">Lista de materiais </span>
+                                        </h3>
+                                    </p>
+                                    <ul>
+                                        <span class="ft11">{% for item in object.lista_de_materiais.all %} </span>
+                                        <li class="ft11"> {{ item }} </li>
+                                        <span class="ft11"> {% endfor %}
+                                        </span>
+                                    </ul>
+                                    <span class="ft11"> {% endif %}</span>
+                                    <h3 class="ft35"> Lista de serviços </h3>
+                                    <ul>
+                                        <li class="ft11"> Item 1 </li>
+                                        <li class="ft11"> Item 2 </li>
+                                        <li class="ft11"> Item 3 </li>
+                                        <li class="ft11"> Item 4 </li>
+                                    </ul>
+                                    <p class="ft11"> São José dos Campos, {{ hoje }}. </p>
+                                    <p class="ft11">&nbsp;</p>
+                                    <p class="ft11"><span class="ft351">Lista de serviços </span></p>
+                                    <p class="ft11">&nbsp;</p>
+                                    <table width="721" border="1" bordercolor="#000000">
+                                        <tr>
+                                            <td width="106">ITEM</td>
+                                            <td width="519">DESCRIÇÃO</td>
+                                            <td width="38">UN</td>
+                                            <td width="40">QTD</td>
+                                        </tr>
+                                        <tr>
+                                            <td>05.01.101</td>
+                                            <td>TUBOS E CONEXÕES</td>
+                                            <td>&nbsp;</td>
+                                            <td>&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td>05.01.101.aa</td>
+                                            <td>Descrição completa do ITEM (tubo xxx 100 mm)</td>
+                                            <td>m</td>
+                                            <td>100</td>
+                                        </tr>
+                                    </table>
+                                    <p class="ft36">&nbsp;</p>
+                                </td>
+                            </tr>
+                        </table>
 
-        <h3> Descrição </h3>
-        <p>
-            {{ object.descricao }}
-        </p>
-
-        {% if object.lista_de_materiais %}
-        <h3> Lista de materiais </h3>
-        <ul>
-            {% for item in object.lista_de_materiais.all %}
-            <li> {{ item }} </li>
-            {% endfor %}
-        </ul>
-        {% endif %}
-
-        <h3> Lista de serviços </h3>
-        <ul>
-            <li> Item 1 </li>
-            <li> Item 2 </li>
-            <li> Item 3 </li>
-            <li> Item 4 </li>
-        </ul>
-
-        <p> São José dos Campos, {{ hoje }}. </p>
-
+                        <p>&nbsp;</p>
+                    </td>
+                </tr>
+            </table>
+        </div>
     </body>
 
 </html>
